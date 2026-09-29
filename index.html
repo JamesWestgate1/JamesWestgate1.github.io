@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>James Westgate | Personal Portfolio</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f4f6f8;
+      color: #1f2937;
+      line-height: 1.6;
+    }
+
+    /* Navigation */
+    nav {
+      background-color: #0f2747;
+      padding: 16px 30px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav-container {
+      max-width: 1050px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-name {
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 25px;
+      font-size: 15px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Header */
+    header {
+      background-color: #17365d;
+      color: white;
+      padding: 65px 25px;
+    }
+
+    .hero {
+      max-width: 1000px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      gap: 50px;
+    }
+
+    .headshot {
+      width: 230px;
+      height: 230px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid white;
+      box-shadow: 0 5px 18px rgba(0,0,0,0.25);
+    }
+
+    .hero-text h1 {
+      font-size: 48px;
+      margin: 0 0 5px 0;
+    }
+
+    .hero-text h2 {
+      margin: 0 0 18px 0;
+      font-size: 21px;
+      font-weight: normal;
+      color: #dbe7f5;
+    }
+
+    .hero-text p {
+      max-width: 650px;
+      font-size: 17px;
+      margin: 0;
+    }
+
+    /* Main Content */
+    main {
+      max-width: 1000px;
+      margin: auto;
+      padding: 45px 20px;
+    }
+
+    section {
+      background-color: white;
+      padding: 35px;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+    }
+
+    h2.section-title {
+      margin-top: 0;
+      color: #17365d;
+      font-size: 28px;
+      border-bottom: 3px solid #dbe4ef;
+      padding-bottom: 10px;
+    }
+
+    /* Skills */
+    .skills-heading {
+      color: #374151;
+      margin-bottom: 12px;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 25px;
+    }
+
+    .skill {
+      background-color: #e7eef7;
+      color: #17365d;
+      padding: 9px 15px;
+      border-radius: 20px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    /* Projects */
+    .project {
+      padding: 25px 0;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .project:first-of-type {
+      padding-top: 5px;
+    }
+
+    .project:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .project h3 {
+      color: #17365d;
+      font-size: 21px;
+      margin-bottom: 10px;
+    }
+
+    .project p {
+      margin-bottom: 20px;
+    }
+
+    .project-button {
+      display: inline-block;
+      background-color: #17365d;
+      color: white;
+      text-decoration: none;
+      padding: 10px 18px;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: 0.2s;
+    }
+
+    .project-button:hover {
+      background-color: #28558a;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #0f2747;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      margin-top: 20px;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    /* Mobile */
+    @media (max-width: 700px) {
+
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .headshot {
+        width: 190px;
+        height: 190px;
+      }
+
+      .hero-text h1 {
+        font-size: 38px;
+      }
+
+      .nav-container {
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      nav a {
+        margin: 0 8px;
+      }
+
+      section {
+        padding: 25px;
+      }
+    }
+  </style>
+</head>
+
+
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+
+      <div class="nav-name">James Westgate</div>
+
+      <div>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+      </div>
+
+    </div>
+  </nav>
+
+
+  <!-- Header -->
+  <header>
+
+    <div class="hero">
+
+      <img
+        src="James.Westgate_HeadShot.png"
+        alt="James Westgate Headshot"
+        class="headshot"
+      >
+
+      <div class="hero-text">
+
+        <h1>James Westgate</h1>
+
+        <h2>Finance Student | Rutgers Business School</h2>
+
+        <p>
+          Undergraduate Finance student with experience in Debt Capital Markets
+          research and a strong interest in pursuing a career in Investment Banking.
+        </p>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <main>
+
+    <!-- Personal Statement -->
+    <section id="about">
+
+      <h2 class="section-title">Personal Statement</h2>
+
+      <p>
+        Hello, my name is James Westgate and I am an undergraduate Finance student
+        at Rutgers Business School and a current Debt Capital Markets research intern
+        looking to leverage my strong work ethic, passion for finance, and experiences
+        to pursue a career in Investment Banking.
+      </p>
+
+    </section>
+
+
+    <!-- Skills -->
+    <section id="skills">
+
+      <h2 class="section-title">Skills</h2>
+
+      <h3 class="skills-heading">Technical Skills</h3>
+
+      <div class="skills">
+
+        <span class="skill">Microsoft Excel</span>
+        <span class="skill">Microsoft PowerPoint</span>
+        <span class="skill">Financial Accounting</span>
+        <span class="skill">Financial Statement Analysis</span>
+        <span class="skill">Credit Analysis</span>
+        <span class="skill">Bloomberg Terminal Operation</span>
+
+      </div>
+
+
+      <h3 class="skills-heading">Professional / Soft Skills</h3>
+
+      <div class="skills">
+
+        <span class="skill">Time Management</span>
+        <span class="skill">Leadership</span>
+        <span class="skill">Communication</span>
+        <span class="skill">Teamwork</span>
+
+      </div>
+
+    </section>
+
+
+    <!-- Projects -->
+    <section id="projects">
+
+      <h2 class="section-title">Projects</h2>
+
+
+      <!-- Project 1 -->
+      <div class="project">
+
+        <h3>LIBOR Bender Trust Stock Pitch Competition</h3>
+
+        <p>
+          Worked with a team of four to research and develop an investment thesis
+          for Donaldson Company, Inc. (NYSE: DCI). Analyzed 5+ years of company
+          and industry data to assess key drivers of DCI's historical performance
+          and future outlook. Developed a financial model and investment pitch deck
+          and presented our investment thesis to a front-office finance panel,
+          including a Neuberger Berman portfolio manager.
+        </p>
+
+        <a
+          class="project-button"
+          href="DCI%20Presentation%20PDF%20%281%29.pdf"
+          target="_blank"
+        >
+          View Project
+        </a>
+
+      </div>
+
+
+      <!-- Project 2 -->
+      <div class="project">
+
+        <h3>Fidelis Investors Undervalued Property Investment Proposal</h3>
+
+        <p>
+          During my internship at Fidelis Investors, a real estate private equity
+          firm, I worked alongside an analyst to identify a potential investment
+          opportunity for the firm. The project focused on identifying an undervalued
+          property on Staten Island, New York, that could be added to the firm's
+          portfolio through a Residential Transitional Loan (RTL). I first identified
+          a potential property and analyzed its characteristics and comparable sales
+          before proposing a loan structure. I then outlined the renovation costs and
+          estimated the post-renovation value to evaluate the potential investment
+          opportunity and ROI. Upon completion of the research, I presented my
+          findings to the Managing Partners and Directors for their investment
+          consideration.
+        </p>
+
+        <a
+          class="project-button"
+          href="Fidelis%20Investors%20Undervalued%20Property%20Presentation.pdf"
+          target="_blank"
+        >
+          View Project
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+
+    <p>© 2026 James Westgate | Personal Portfolio</p>
+
+  </footer>
+
+</body>
+
+</html>
